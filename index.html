@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="./libs/css/bootstrap.min">
+    <link rel="stylesheet" type="text/css" href="./libs/css/leaflet">
+    <link rel="stylesheet" type="text/css" href="./libs/css/style">
+    <title>Gazetteer</title>
+  </head>
+    
+  <body>
+    <div id="preloader"></div>
+        
+        
+    <header class="container-fluid">
+      <div class="row">
+        <div id="logoBox"><img id="logo" alt="logo" src="libs/css/images/logo2.png"></div>
+        <input type="text" name="countrySearch" id="searchBar" placeholder="Search for a country...">
+      </div>
+      <nav>
+        <input type="button" id="returnBtn" class="layerBtn" value="Reset map">
+        <p id="divider">|</p>
+        <input type="button" id="populations" class="layerBtn" value="Population">
+        <input type="button" id="populationDensities" class="layerBtn" value="Population density">
+        <input type="button" id="gdp" class="layerBtn" value="GDP">
+        <input type="button" id="gdpCap" class="layerBtn" value="GDP per capita">
+        <input type="button" id="covidBtn" class="layerBtn" value="covid cases">
+        <p id="divider">|</p>
+        <input type="button" id="cloudBtn" class="layerBtn" value="clouds">
+        <input type="button" id="tempBtn" class="layerBtn" value="temperature">
+        <input type="button" id="rainBtn" class="layerBtn" value="precipitation">
+      </nav>
+    </header>
+
+    <div id="map-container" class="container-fluid">
+      <div id="map-row" class="row">
+        <div id="map-wrapper" class="light-style">
+          <div id="map"></div>
+          <input type="button" id="show-info-btn" value="<">
+          <div id="map-style-buttons">
+            <input type="button" class="map-style-btn base-map-clicked" id="light" value="LIGHT">
+            <input type="button" class="map-style-btn" id="dark" value="DARK">
+            <input type="button" class="map-style-btn" id="satellite" value="PHOTO">
+          </div>
+        </div>
+        <div id="info">
+          <div id="general" class="infoSection"></div>
+          <h2>TOP 10 CITIES BY POPULATION</h2>
+          <div id="cities" class="infoSection"></div>
+          <div id="covid" class="infoSection"></div>
+          <div id="rates" class="infoSection"></div>
+          <h2>WEATHER</h2>
+          <div id="weather" class="infoSection"></div>
+        </div>
+      </div>
+    </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+    <script type="application/javascript" src="./libs/js/jquery-3.5.1"></script>
+    <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script type="application/javascript" src="./libs/js/bootstrap.min"></script>
+    <script type="application/javascript" src="./libs/js/leaflet"></script>
+    <script type="application/javascript" src="./libs/js/leaflet-providers"></script>
+    <script type="application/javascript" src="./libs/js/populationDensity"></script>
+    <script type="application/javascript" src="./libs/js/populations"></script>
+    <script type="application/javascript" src="./libs/js/script"></script>
+  </body>
+</html>
